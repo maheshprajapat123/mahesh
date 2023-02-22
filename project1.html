@@ -35,5 +35,72 @@
       </div>
       
 <script src="script1.js"></script>
+
+
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-5 copyright">
+              <p>
+                  Copyright &copy; <span id="current-year">2023</span> mahesh
+              </p>
+          </div>
+          <div class="col-sm-2 top">
+              <span id="to-top">
+                  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              </span>
+          </div>
+          <div class="col-sm-5 social">
+              <ul>
+                  <li>
+                      <a href="https://github.com/maheshprajapat123" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </li>
+                  
+                  <li>
+                      <a href="https://www.linkedin.com/in/mahesh-prajapat-3974ab202/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/mahash.prajapat.5" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://www.instagram.com/ma_hesh_p.01/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://plus.google.com/" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i>+91-8107171131</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+<script>
+ const toTopButton = document.getElementById('to-top');
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 100) {
+    toTopButton.style.display = "block";
+  } else {
+    toTopButton.style.display = "none";
+  }
+};
+
+toTopButton.onclick = function() {
+  const scrollTopAnimation = setInterval(function() {
+    if (document.documentElement.scrollTop <= 0) {
+      clearInterval(scrollTopAnimation);
+    } else {
+      document.documentElement.scrollTop -= 10;
+    }
+  }, 5);
+};
+
+
+</script>
 </body>
 </html>
