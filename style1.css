@@ -1,6 +1,4 @@
-body{
-    background-color:ivory
-}
+
 .project01 {
     display: flex;
     justify-content: center;
@@ -8,14 +6,14 @@ body{
     flex-direction: column;
     margin: 20px;
     padding: 20px;
-    border: 2px solid #ccc;
+    margin-bottom: 20px;
     border-radius: 10px;
-    background-image: url(images/p2back.jpg);
+    
     align-items: center;
   }
   
   .project01 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0 10px;
     border-bottom: 2px solid #ccc;
@@ -25,6 +23,14 @@ body{
     margin: 20px;
     font-size: 1.2rem;
     text-align: justify;
+  }
+  .project01-text {
+    background: #fff;
+    box-shadow: 2px 2px 2px grey;
+   
+    padding: 20px;
+    margin: 20px;
+
   }
   
   .project01 .image-container {
@@ -46,10 +52,24 @@ body{
     border: 2px solid #ccc;
     border-radius: 10px;
   }
+  .project01-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .project01-images img {
+    max-width: 48%;
+    height: auto;
+
+  }
   @media only screen and (max-width: 1250px) {
     .project01 {
       margin: 10px;
       padding: 10px;
+      margin-bottom: 20px;
     }
   
     .project01 h3 {
@@ -74,6 +94,7 @@ body{
     .project01 {
       margin: 10px;
       padding: 10px;
+      margin-bottom: 20px;
     }
   
     .project01 h3 {
@@ -91,6 +112,7 @@ body{
   
     .project01 img {
       max-width: 33%;
+      
     }
   }
   
@@ -98,6 +120,7 @@ body{
     .project01 {
       margin: 5px;
       padding: 5px;
+      margin-bottom: 20px;
     }
   
     .project01 h3 {
@@ -116,4 +139,76 @@ body{
       max-width: 25%;
     }
   }
+  /* Footer styling */
+/* Footer styling */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  margin-bottom: 0%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom:0%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.col-sm-5, .col-sm-2 {
+  text-align: center;
+}
+
+.col-sm-5 p {
+  margin: 0;
+}
+
+.top {
+  font-size: 30px;
+}
+
+.social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  margin-right: 15px;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.social a {
+  color: #555;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-sm-5, .col-sm-2, .social {
+    margin-bottom: 5px;
+  }
+}
